@@ -1,0 +1,21 @@
+
+public class Selection {
+	public static void main(String[] args) {
+		int v[] = {11, 9, 10, 2, 36, 11};
+		int n = 6;
+		
+		for (int i = 0; i <= n-1; i++) {
+            int min = i;
+            for (int j = i+1; j < n; j++)
+                if (v[j] < v[min])
+                    min = j;
+            int x = v[min];
+            v[min] = v[i];
+            v[i] = x;
+        }
+		
+		for (int i = 0; i < n; i++) {
+			System.out.print(v[i] + " ");
+		}
+	}
+}
