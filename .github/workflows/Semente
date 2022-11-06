@@ -1,0 +1,26 @@
+import java.util.Random;
+
+public class Teste {
+	public static void main(String[] args) {
+		int []v = new int [6];
+		
+		System.out.println();
+		preencherVetor(v, 50,13);
+		exibirVetor(v);
+	}
+	
+	public static void preencherVetor(int []v, int u, long seed){
+		Random rnd = new Random();
+		seed = 66762;
+		rnd.setSeed(seed);
+		for (int i = 0; i < v.length; i++) {
+			v[i] = rnd.nextInt(50);
+		}
+	}
+	public static void exibirVetor(int []v){
+		int size = v.length;
+		for (int i = 0; i < v.length; i++) {
+			System.out.print(v[i] + " ");
+		}
+	}
+}
