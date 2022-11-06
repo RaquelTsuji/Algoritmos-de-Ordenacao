@@ -1,5 +1,5 @@
 
-public class Selection {
+public class SelectionSort {
 	public static void main(String[] args) {
 		int v[] = {11, 9, 10, 2, 36, 11};
 		int n = 6;
